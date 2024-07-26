@@ -1,4 +1,4 @@
-### Exercise 12.02
+## Exercise 12.02
 Suppose that `high`, `low` and `middle` are all pointer variables of the same
 type, and that `low` and `high` point to elements of an array. Why is the
 following statement illegal, and how could it be fixed?
@@ -6,7 +6,7 @@ following statement illegal, and how could it be fixed?
 ```c
 middle = (low + high) / 2;
 ```
-
+## Solution
 `(low + high) / 2` you cannot add pointers together. This can be fixed by subtracting them.
 ```c
 middle = low + (high - low) / 2
