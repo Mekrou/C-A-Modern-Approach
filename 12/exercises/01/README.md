@@ -1,4 +1,4 @@
-###Exercise 12.01
+### Exercise 12.01
 
 Suppose that the following declarations are in effect:
 ```
