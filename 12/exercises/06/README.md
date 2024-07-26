@@ -19,7 +19,8 @@ int sum_array(const int a[], int n)
 int sum_array(const int *a, int n)
 {
     int sum;
-    for(sum = 0; a < &a[n]; a++)
+    const int *last_ptr = a + n;
+    for(sum = 0; a < last_ptr; a++)
         sum += *a;
     return sum;
 }
