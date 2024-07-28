@@ -14,8 +14,7 @@ not subscripting -- to visit array elements.
 ```c
 double inner_product(const double *a, const double *b, int n)
 {
-    const double *p;
-    const double *q;
+    const double *p, *q;
     double result = 0;
     for (p = a, q = b; p < a + n; p++, q++)
     {
